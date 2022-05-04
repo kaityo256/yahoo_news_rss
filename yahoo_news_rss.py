@@ -1,6 +1,10 @@
 import requests
 import datetime
 
+DATA_DIR = 'data'
+
+topics = {"主要": "top-pics", "国内": "domestic", "国際": "world", "IT": "it"}
+
 
 def savexml(topic):
     URL = f"https://news.yahoo.co.jp/rss/topics/{topic}.xml"
@@ -12,10 +16,10 @@ def savexml(topic):
     return filename
 
 
-topics = {"主要": "top-pics", "国内": "domestic", "国際": "world", "IT": "it"}
-
-for key, topic in topics.items():
-    filename = savexml(topic)
-    print(f"{key} => {filename}")
+if __name__ == '__main__':
+    print("hello")
+    # for key, topic in topics.items():
+    #    filename = savexml(topic)
+    #    print(f"{key} => {filename}")
 
 # savexml("it")
