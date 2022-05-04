@@ -9,6 +9,13 @@ def savexml(topic):
     r = requests.get(URL)
     with open(filename, "a") as f:
         f.write(r.text)
+    return filename
 
 
-savexml("it")
+topics = {"主要": "top-pics", "国内": "domestic", "国際": "world", "IT": "it"}
+
+for key, topic in topics.items():
+    filename = savexml(topic)
+    print(f"{key} => {filename}")
+
+# savexml("it")
