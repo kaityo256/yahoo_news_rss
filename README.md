@@ -8,6 +8,17 @@ Yahoo! NewsのRSSをウェブスクレイピングにより取得するスクリ
 
 ウェブスクレイピングについては、サーバの著作権や負荷、`robots.txt`に注意して実行してください。
 
+## 必要ライブラリ
+
+`request`が必要なので、なければインストールする。仮想環境を構築すると良い。
+
+```sh
+python3 -m venv myenv
+source myenv/bin/activate
+python3 -m pip install --upgrade pip
+python3 -m pip install requests
+```
+
 ## 実行方法
 
 ```sh
