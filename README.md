@@ -17,6 +17,7 @@ python3 -m venv myenv
 source myenv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install requests
+python3 -m pip install transformers
 ```
 
 ## 実行方法
