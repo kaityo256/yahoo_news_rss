@@ -13,8 +13,8 @@ Yahoo! NewsのRSSをウェブスクレイピングにより取得するスクリ
 `request`が必要なので、なければインストールする。仮想環境を構築すると良い。
 
 ```sh
-python3 -m venv myenv
-source myenv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate
 python3 -m pip install --upgrade pip
 python3 -m pip install requests
 python3 -m pip install tensorflow
